@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/attendance_navgraph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.attandenceteacherside.Fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_markAttendanceFragment"
+            app:destination="@id/markAttendanceFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_attendanceSummaryFragment"
+            app:destination="@id/attendanceSummaryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/markAttendanceFragment"
+        android:name="com.example.attandenceteacherside.Fragments.MarkAttendanceFragment"
+        android:label="fragment_mark_attendance"
+        tools:layout="@layout/fragment_mark_attendance" />
+    <fragment
+        android:id="@+id/attendanceSummaryFragment"
+        android:name="com.example.attandenceteacherside.Fragments.AttendanceSummaryFragment"
+        android:label="fragment_attendance_summary"
+        tools:layout="@layout/fragment_attendance_summary" />
+</navigation>

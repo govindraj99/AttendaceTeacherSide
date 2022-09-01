@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="6dp"
+        app:strokeColor="#28DF99"
+        app:strokeWidth="2dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/zoom_Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="20dp"
+                android:background="#E7F3FF"
+                android:drawablePadding="4dp"
+                android:fontFamily="@font/roboto_bold"
+                android:paddingHorizontal="7dp"
+                android:paddingVertical="2dp"
+                android:text="ZOOM 40"
+                android:textColor="#1089FF"
+                app:drawableStartCompat="@drawable/zoom_img" />
+
+            <TextView
+                android:id="@+id/sub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/zoom_Tv"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="6dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Botany"
+                android:textColor="#191919"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sub"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/roboto"
+                android:text="10:00 - 11:00 AM"
+                android:textColor="#636363"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/presentstu_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="46dp"
+                android:visibility="gone"
+                android:src="@drawable/present_img" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PRESENT"
+                android:textColor="#28DF99"
+                android:textSize="12sp"
+                android:visibility="gone"
+                android:fontFamily="@font/roboto_bold"
+                android:layout_below="@+id/presentstu_img"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="32dp"
+                android:layout_marginTop="6dp"/>
+            <ImageView
+                android:id="@+id/absentstu_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="46dp"
+                android:src="@drawable/ic_baseline_absent" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ABSENT"
+                android:textColor="#FF414D"
+                android:textSize="12sp"
+                android:fontFamily="@font/roboto_bold"
+                android:layout_below="@+id/absentstu_img"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="32dp"
+                android:layout_marginTop="6dp"/>
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

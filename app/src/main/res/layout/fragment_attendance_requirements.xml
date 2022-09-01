@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.AttendanceRequirementsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Working days"
+                android:textColor="#191919"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="24dp"
+                android:fontFamily="@font/roboto"
+                android:text="Would you like to consider Saturday and Sunday as working days?"
+                android:textColor="#636363"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="24dp"
+                android:drawableStart="@drawable/ic_information"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/roboto"
+                android:text="Monday to Friday are considered as working days"
+                android:textColor="#AEAEAE"
+                android:textSize="14sp" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="25dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/arb1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto"
+                        android:text="  Saturday"
+                        android:textColor="#191919"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="100dp"
+                        android:layout_toEndOf="@+id/arb1"
+                        android:fontFamily="@font/roboto"
+                        android:text="  Sunday"
+                        android:textColor="#191919"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/arb1"
+                        android:fontFamily="@font/roboto"
+                        android:text="  Both Saturday and Sunday"
+                        android:textColor="#191919"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="24.5dp"
+                android:layout_marginEnd="24dp"
+                android:background="#E6E6E6" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24.5dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Staff’s total working hours"
+                android:textColor="#191919"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="24dp"
+                android:fontFamily="@font/roboto"
+                android:text="Set the total working hours for a day for your staffs (Teachers, Data Operators and Operations)"
+                android:textColor="#636363"
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/Amount_Tl"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="171dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="#FFFFFF"
+                    android:textColorHint="#AEAEAE"
+                    app:boxStrokeColor="#E6E6E6">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/Amount_ET"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter hours"
+                        android:inputType="number"
+                        android:textSize="14sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/Duedate_Tl"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="171dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_toEndOf="@id/Amount_Tl"
+                    android:focusableInTouchMode="false"
+                    android:textColorHint="#AEAEAE"
+                    app:boxStrokeColor="#E6E6E6"
+                    app:endIconMode="custom"
+                    app:hintTextColor="#AEAEAE">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/datepick"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:hint="Enter mins"
+                        android:textSize="14sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="24.5dp"
+                android:layout_marginEnd="24dp"
+                android:background="#E6E6E6" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Staff’s minimum attendance requirements"
+                android:textColor="#191919"
+                android:fontFamily="@font/roboto_bold"
+                android:textSize="16sp"
+                android:layout_marginTop="24.5dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Staff’s minimum attendance requirements"
+                android:textColor="#636363"
+                android:fontFamily="@font/roboto"
+                android:textSize="16sp"
+                android:layout_marginTop="6dp"
+                />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Same for all"
+                android:textColor="#191919"
+                android:textSize="14sp"
+                android:fontFamily="@font/roboto"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Teachers"
+                android:textSize="14sp"
+                android:layout_marginTop="16dp"
+                android:textColor="#191919"
+                android:fontFamily="@font/roboto"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/percent"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="171dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#FFFFFF"
+                android:textColorHint="#AEAEAE"
+                app:boxStrokeColor="#E6E6E6">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/percent_ET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter percentage"
+                    android:inputType="number"
+                    android:textSize="14sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Off total working hours"
+                    android:textColor="#636363"
+                    android:textSize="14sp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginStart="24dp"
+                    android:fontFamily="@font/roboto"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Data Operators"
+                android:textSize="14sp"
+                android:layout_marginTop="16dp"
+                android:textColor="#191919"
+                android:fontFamily="@font/roboto"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/percent2"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="171dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:backgroundTint="#FFFFFF"
+                    android:textColorHint="#AEAEAE"
+                    app:boxStrokeColor="#E6E6E6">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/do_percent_ET"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter percentage"
+                        android:inputType="number"
+                        android:textSize="14sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Off total working hours"
+                    android:textColor="#636363"
+                    android:textSize="14sp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginStart="24dp"
+                    android:fontFamily="@font/roboto"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Operators"
+                android:textSize="14sp"
+                android:layout_marginTop="16dp"
+                android:textColor="#191919"
+                android:fontFamily="@font/roboto"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/percent3"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="171dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:backgroundTint="#FFFFFF"
+                    android:textColorHint="#AEAEAE"
+                    app:boxStrokeColor="#E6E6E6">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/o_percent_ET"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter percentage"
+                        android:inputType="number"
+                        android:textSize="14sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Off total working hours"
+                    android:textColor="#636363"
+                    android:textSize="14sp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginStart="24dp"
+                    android:fontFamily="@font/roboto"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="24dp"
+                android:background="#E6E6E6" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Student’s minimum attendance requirements"
+                android:textColor="#191919"
+                android:fontFamily="@font/roboto_bold"
+                android:textSize="16sp"
+                android:layout_marginTop="24.5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Set a minimum attendance required for your students"
+                android:textColor="#636363"
+                android:fontFamily="@font/roboto"
+                android:textSize="16sp"
+                android:layout_marginTop="6dp"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/percent4"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="171dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:backgroundTint="#FFFFFF"
+                android:textColorHint="#AEAEAE"
+                app:boxStrokeColor="#E6E6E6">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/student_percent_ET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter percentage"
+                    android:inputType="number"
+                    android:textSize="14sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="24dp"
+                android:background="#E6E6E6" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Maximum request for attendance"
+                android:textColor="#191919"
+                android:fontFamily="@font/roboto_bold"
+                android:textSize="16sp"
+                android:layout_marginTop="24.5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Set a limit to the amount of times your staffs can request for manual Clock In/Clock Out"
+                android:textColor="#636363"
+                android:fontFamily="@font/roboto"
+                android:textSize="16sp"
+                android:layout_marginTop="6dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Incase a staff members missed to Clock In/Clock Out, he/she can request for a manual for that day"
+                android:textColor="#AEAEAE"
+                android:fontFamily="@font/roboto"
+                android:drawableStart="@drawable/ic_information"
+                android:drawablePadding="8dp"
+                android:textSize="12sp"
+                android:layout_marginTop="6dp"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Same for all"
+                android:textColor="#191919"
+                android:textSize="14sp"
+                android:fontFamily="@font/roboto"
+                android:layout_marginTop="24dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Teachers"
+                android:textSize="14sp"
+                android:layout_marginTop="16dp"
+                android:textColor="#191919"
+                android:fontFamily="@font/roboto"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/percent5"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="171dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:backgroundTint="#FFFFFF"
+                    android:textColorHint="#AEAEAE"
+                    app:boxStrokeColor="#E6E6E6">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/t_percent_ET"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter percentage"
+                        android:inputType="number"
+                        android:textSize="14sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="per Month"
+                    android:textColor="#636363"
+                    android:textSize="14sp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginStart="24dp"
+                    android:fontFamily="@font/roboto"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Data Operators"
+                android:textSize="14sp"
+                android:layout_marginTop="16dp"
+                android:textColor="#191919"
+                android:fontFamily="@font/roboto"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/percent6"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="171dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:backgroundTint="#FFFFFF"
+                    android:textColorHint="#AEAEAE"
+                    app:boxStrokeColor="#E6E6E6">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/do_percent_ET2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter percentage"
+                        android:inputType="number"
+                        android:textSize="14sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Per Month"
+                    android:textColor="#636363"
+                    android:textSize="14sp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginStart="24dp"
+                    android:fontFamily="@font/roboto"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Operators"
+                android:textSize="14sp"
+                android:layout_marginTop="16dp"
+                android:textColor="#191919"
+                android:fontFamily="@font/roboto"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/percent7"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="171dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:backgroundTint="#FFFFFF"
+                    android:textColorHint="#AEAEAE"
+                    android:layout_marginBottom="24dp"
+                    app:boxStrokeColor="#E6E6E6">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/o_percent_ET2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter percentage"
+                        android:inputType="number"
+                        android:textSize="14sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Off total working hours"
+                    android:textColor="#636363"
+                    android:textSize="14sp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginStart="24dp"
+                    android:fontFamily="@font/roboto"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

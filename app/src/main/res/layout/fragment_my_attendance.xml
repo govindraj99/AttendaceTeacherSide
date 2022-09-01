@@ -1,0 +1,743 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6E6E6"
+    android:orientation="vertical"
+    tools:context=".Fragments.MyAttendanceFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- TODO: Update blank fragment layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/withdata_cardview"
+                android:layout_width="match_parent"
+                android:layout_height="565dp"
+                android:layout_marginHorizontal="12dp"
+
+                android:layout_marginTop="12dp"
+                android:background="#FFFFFF"
+                app:cardCornerRadius="8dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="24dp"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text="Your attendance today"
+                        android:textColor="#191919"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/datetv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/roboto"
+                        android:text="12/12/2021"
+                        android:textColor="#636363"
+                        android:textSize="12sp"
+                        app:layout_constraintStart_toStartOf="@+id/textView"
+                        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="\u25cf"
+                        android:textColor="#636363"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/datetv"
+                        app:layout_constraintStart_toEndOf="@+id/datetv"
+                        app:layout_constraintTop_toTopOf="@+id/datetv" />
+
+                    <TextView
+                        android:id="@+id/daytv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:fontFamily="@font/roboto"
+                        android:text="Monday"
+                        android:textColor="#636363"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/textView3"
+                        app:layout_constraintStart_toEndOf="@+id/textView3"
+                        app:layout_constraintTop_toTopOf="@+id/textView3" />
+
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/clockimg"
+                        android:layout_width="183dp"
+                        android:layout_height="173dp"
+                        android:layout_marginStart="108dp"
+                        android:layout_marginTop="42dp"
+                        android:elevation="2dp"
+                        android:gravity="center"
+                        android:src="@drawable/clock_bgtwo"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/daytv"
+                        app:shapeAppearanceOverlay="@style/circle"
+                        app:strokeColor="#E6E6E6"
+                        app:strokeWidth="1dp" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/clockmein_btn"
+                        android:layout_width="161dp"
+                        android:layout_height="41dp"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/roundbutton"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text="@string/clock_me_in"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/clockimg" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/clockmeout_btn"
+                        android:layout_width="161dp"
+                        android:layout_height="41dp"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/roundbutton"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text="@string/clock_me_in"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:visibility="gone"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/clockimg" />
+
+                    <ImageView
+                        android:id="@+id/clockin_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="56dp"
+                        android:layout_marginTop="32dp"
+
+                        android:src="@drawable/ic_clock_in"
+                        app:layout_constraintStart_toEndOf="@+id/clockout_img"
+                        app:layout_constraintTop_toBottomOf="@id/clockmein_btn" />
+
+                    <ImageView
+                        android:id="@+id/clockout_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="32dp"
+                        android:src="@drawable/ic_clock_out"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/clockmein_btn" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="60dp"
+                        android:layout_marginTop="32dp"
+                        android:layout_marginEnd="67dp"
+                        android:src="@drawable/ic_geo_fence"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/clockin_img"
+                        app:layout_constraintTop_toBottomOf="@+id/clockmein_btn" />
+
+                    <TextView
+                        android:id="@+id/clockin_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text="-"
+                        android:textColor="#191919"
+                        android:textSize="18dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/clockout_img" />
+
+                    <TextView
+                        android:id="@+id/clockout_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="112dp"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text="-"
+                        android:textColor="#191919"
+                        android:textSize="18dp"
+                        app:layout_constraintStart_toEndOf="@+id/clockin_time"
+                        app:layout_constraintTop_toBottomOf="@+id/clockin_img" />
+
+                    <TextView
+                        android:id="@+id/geofence_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="113dp"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text="-"
+                        android:textColor="#191919"
+                        android:textSize="18dp"
+                        app:layout_constraintStart_toEndOf="@+id/clockout_time"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+                    <TextView
+                        android:id="@+id/clockin_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="3dp"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text="Clock in"
+                        android:textColor="#636363"
+                        android:textSize="12sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/clockin_time" />
+
+                    <TextView
+                        android:id="@+id/clockout_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="77dp"
+                        android:layout_marginTop="3dp"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text="Clock out"
+                        android:textColor="#636363"
+                        android:textSize="12sp"
+                        app:layout_constraintStart_toEndOf="@+id/clockin_tv"
+                        app:layout_constraintTop_toBottomOf="@+id/clockout_time" />
+
+                    <TextView
+                        android:id="@+id/geofence_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="66dp"
+                        android:layout_marginTop="3dp"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text="Clock out"
+                        android:textColor="#636363"
+                        android:textSize="12sp"
+                        app:layout_constraintStart_toEndOf="@+id/clockout_tv"
+                        app:layout_constraintTop_toBottomOf="@+id/geofence_time" />
+
+                    <TextView
+                        android:id="@+id/forget_toclockin_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="120dp"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginEnd="120dp"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text="FORGOT TO CLOCK IN?"
+                        android:textColor="#1089FF"
+                        android:textSize="14sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/clockout_tv" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/attendaceoverview_cardview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="20dp"
+                android:background="#FFFFFF"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/ao_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="24dp"
+                            android:layout_marginTop="24dp"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="Attendance overview"
+                            android:textColor="#191919"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/since_date_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/ao_tv"
+                            android:layout_marginStart="24dp"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/roboto"
+                            android:text="Since"
+                            android:textColor="#636363"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/since_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@id/since_date_tv"
+                            android:layout_marginTop="4dp"
+                            android:layout_toEndOf="@id/since_date_tv"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text=" 12/12/2021"
+                            android:textColor="#636363"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginEnd="24dp"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="VIEW PROFILE"
+                            android:textColor="#1089FF"
+                            android:textSize="14sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="12dp"
+
+                        android:layout_marginEnd="20dp">
+
+                        <ImageView
+                            android:id="@+id/presentday_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_present" />
+
+                        <TextView
+                            android:id="@+id/present_dayscount_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/presentday_img"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="0"
+                            android:textColor="#191919"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/present_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/present_dayscount_tv"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/roboto"
+                            android:text="Present days(s)"
+                            android:textColor="#191919"
+                            android:textSize="13sp" />
+
+                        <ImageView
+                            android:id="@+id/absentday_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="75dp"
+                            android:layout_toEndOf="@id/presentday_img"
+                            android:src="@drawable/ic_absent" />
+
+                        <TextView
+                            android:id="@+id/absent_dayscount_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/absentday_img"
+                            android:layout_marginStart="51dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_toEndOf="@id/present_tv"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="0"
+                            android:textColor="#191919"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/absent_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/absent_dayscount_tv"
+                            android:layout_marginStart="45dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_toEndOf="@+id/present_tv"
+                            android:fontFamily="@font/roboto"
+                            android:text="Absent days(s)"
+                            android:textColor="#191919"
+                            android:textSize="13sp" />
+
+                        <ImageView
+                            android:id="@+id/overallpercent_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="75dp"
+                            android:layout_toEndOf="@id/absentday_img"
+                            android:src="@drawable/ic_absent" />
+
+                        <TextView
+                            android:id="@+id/overall_percentcount_Tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/overallpercent_img"
+                            android:layout_marginStart="49dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_toEndOf="@id/absent_tv"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="0"
+                            android:textColor="#191919"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/overallpercent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/overall_percentcount_Tv"
+                            android:layout_marginStart="45dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_toEndOf="@+id/absent_tv"
+                            android:fontFamily="@font/roboto"
+                            android:text="Overall percentage"
+                            android:textColor="#191919"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/lowattendance_imgtv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/overallpercent"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="25dp"
+                            android:drawableStart="@drawable/ic_baseline_warning"
+                            android:fontFamily="@font/roboto_bold"
+                            android:gravity="center_vertical"
+                            android:text="Low attendance"
+                            android:textColor="#FF414D"
+                            android:textSize="11sp" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginEnd="20dp">
+
+                        <ImageView
+                            android:id="@+id/totalwork_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_working_hrs" />
+
+                        <TextView
+                            android:id="@+id/totalwork_count_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/totalwork_img"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="00:00:00"
+                            android:textColor="#191919"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/totalwork_tv"
+                            android:layout_width="90dp"
+                            android:layout_height="30dp"
+                            android:layout_below="@id/totalwork_count_tv"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/roboto"
+                            android:text="Total working hours"
+                            android:textColor="#191919"
+                            android:textSize="13sp" />
+
+                        <ImageView
+                            android:id="@+id/avgwork_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="75dp"
+                            android:layout_toEndOf="@+id/totalwork_img"
+                            android:src="@drawable/ic_avg_working_hrs" />
+
+                        <TextView
+                            android:id="@+id/avgwork_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/avgwork_img"
+                            android:layout_marginStart="48dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_toEndOf="@id/totalwork_tv"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="00:00"
+                            android:textColor="#191919"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/avgwork_tv"
+                            android:layout_width="90dp"
+                            android:layout_height="30dp"
+                            android:layout_below="@id/avgwork_count"
+                            android:layout_marginStart="45dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_toEndOf="@+id/totalwork_tv"
+                            android:fontFamily="@font/roboto"
+                            android:text="Average working hours"
+                            android:textColor="#191919"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/avgwork_tv"
+                            android:layout_alignStart="@+id/avgwork_tv"
+                            android:layout_alignEnd="@+id/avgwork_tv"
+                            android:drawableStart="@drawable/ic_baseline_warning"
+                            android:fontFamily="@font/roboto_bold"
+                            android:gravity="center_vertical"
+                            android:text="Low working hours"
+                            android:textColor="#FF414D"
+                            android:textSize="11sp" />
+
+
+                        <ImageView
+                            android:id="@+id/leaves_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="75dp"
+                            android:layout_toEndOf="@id/avgwork_img"
+                            android:src="@drawable/ic_leaves" />
+
+                        <TextView
+                            android:id="@+id/leaves_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/leaves_img"
+                            android:layout_marginStart="49dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_toEndOf="@id/avgwork_tv"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="0"
+                            android:textColor="#191919"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/totalleaves_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/leaves_count"
+                            android:layout_marginStart="45dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_toEndOf="@+id/avgwork_tv"
+                            android:fontFamily="@font/roboto"
+                            android:text="Total leaves"
+                            android:textColor="#191919"
+                            android:textSize="13sp" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="12dp"
+                android:layout_marginBottom="32dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:id="@+id/attendance_summary_layout"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/attendance_summary_img"
+                                android:layout_width="36dp"
+                                android:layout_height="36dp"
+                                android:layout_marginHorizontal="24dp"
+                                android:layout_marginTop="24dp"
+                                android:layout_marginBottom="18.5dp"
+                                android:src="@drawable/attendance_summury" />
+
+                            <TextView
+
+                                android:id="@+id/attendance_summary_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignTop="@+id/attendance_summary_img"
+                                android:layout_alignBottom="@+id/attendance_summary_img"
+                                android:layout_toEndOf="@+id/attendance_summary_img"
+                                android:fontFamily="@font/roboto_medium"
+                                android:gravity="center_vertical"
+                                android:text="Atendance summary"
+                                android:textColor="#191919"
+                                android:textSize="16sp" />
+
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignTop="@+id/attendance_summary_tv"
+                                android:layout_alignBottom="@+id/attendance_summary_tv"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginEnd="32dp"
+                                android:background="@color/white"
+                                android:src="@drawable/ic_back_arrow" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginHorizontal="24.5dp"
+                        android:background="#E6E6E6" />
+
+                    <LinearLayout
+                        android:id="@+id/holidays_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/holiday_img"
+                                android:layout_width="36dp"
+                                android:layout_height="36dp"
+                                android:layout_marginHorizontal="24dp"
+                                android:layout_marginTop="24dp"
+                                android:layout_marginBottom="18.5dp"
+                                android:src="@drawable/ic_holidays" />
+
+                            <TextView
+
+                                android:id="@+id/holiday_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignTop="@+id/holiday_img"
+                                android:layout_alignBottom="@+id/holiday_img"
+                                android:layout_toEndOf="@+id/holiday_img"
+                                android:fontFamily="@font/roboto_medium"
+                                android:gravity="center_vertical"
+                                android:text="Holidays"
+                                android:textColor="#191919"
+                                android:textSize="16sp" />
+
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignTop="@+id/holiday_tv"
+                                android:layout_alignBottom="@+id/holiday_tv"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginEnd="32dp"
+                                android:background="@color/white"
+                                android:src="@drawable/ic_back_arrow" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginHorizontal="24.5dp"
+                        android:background="#E6E6E6" />
+
+                    <LinearLayout
+                        android:id="@+id/leave_requeest_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/leave_request_img"
+                                android:layout_width="36dp"
+                                android:layout_height="36dp"
+                                android:layout_marginHorizontal="24dp"
+                                android:layout_marginTop="24dp"
+                                android:layout_marginBottom="18.5dp"
+                                android:src="@drawable/ic_leaves" />
+
+                            <TextView
+
+                                android:id="@+id/leave_request_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignTop="@+id/leave_request_img"
+                                android:layout_alignBottom="@+id/leave_request_img"
+                                android:layout_toEndOf="@+id/leave_request_img"
+                                android:fontFamily="@font/roboto_medium"
+                                android:gravity="center_vertical"
+                                android:text="Upcoming Leave/Request"
+                                android:textColor="#191919"
+                                android:textSize="16sp" />
+
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignTop="@+id/leave_request_tv"
+                                android:layout_alignBottom="@+id/leave_request_tv"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginEnd="32dp"
+                                android:background="@color/white"
+                                android:src="@drawable/ic_back_arrow" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

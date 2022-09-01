@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/account_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/girlimg" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/zoom_Tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/account_img"
+        android:drawablePadding="4dp"
+        android:fontFamily="@font/roboto_bold"
+        android:paddingHorizontal="2dp"
+        android:text="Bruce C. Ammerman"
+        android:textColor="#191919"
+        android:textSize="16sp"
+       />
+
+    <TextView
+        android:id="@+id/sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/zoom_Tv"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="6dp"
+        android:layout_toEndOf="@+id/account_img"
+        android:fontFamily="@font/roboto"
+        android:text="Roll No. 03"
+        android:textColor="#636363"
+
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/std_sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sub"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="2dp"
+        android:layout_toEndOf="@+id/account_img"
+        android:fontFamily="@font/roboto"
+        android:text="01 hrs 03 mins"
+        android:textColor="#636363"
+        android:textSize="11sp" />
+    </RelativeLayout>
+
+</LinearLayout>

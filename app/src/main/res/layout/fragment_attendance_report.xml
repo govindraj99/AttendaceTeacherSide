@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.AttendanceReportFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/account_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="28dp"
+            android:src="@drawable/sbj_accountancy" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/zoom_Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@+id/account_img"
+            android:background="#F6F4FE"
+            android:drawablePadding="4dp"
+            android:fontFamily="@font/roboto_bold"
+            android:paddingHorizontal="7dp"
+            android:text="CONFERENCE"
+            android:textColor="#594099"
+            android:textSize="16sp"
+
+            app:drawableStartCompat="@drawable/ic_conference" />
+
+        <TextView
+            android:id="@+id/sub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/zoom_Tv"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="6dp"
+            android:layout_toEndOf="@+id/account_img"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Accountancy"
+            android:textColor="#191919"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/std_sub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sub"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="2dp"
+            android:layout_toEndOf="@+id/account_img"
+            android:fontFamily="@font/roboto"
+            android:text="XII - A: Commerce"
+            android:textColor="#636363"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/std_sub"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="2dp"
+            android:layout_toEndOf="@+id/account_img"
+            android:fontFamily="@font/roboto"
+            android:text="10:00 - 11:00 AM"
+            android:textColor="#636363"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/presentstu_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="46dp"
+            android:src="@drawable/present_img"
+            android:visibility="visible" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/presentstu_img"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="32dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="PRESENT"
+            android:textColor="#28DF99"
+            android:textSize="12sp"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/absentstu_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="46dp"
+            android:src="@drawable/ic_baseline_absent"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/absentstu_img"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="32dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="ABSENT"
+            android:textColor="#FF414D"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/account_img"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="35dp"
+            android:id="@+id/mydetail_tv"
+            android:fontFamily="@font/roboto_bold"
+            android:text="MY DETAILS"
+            android:textColor="#636363" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:id="@+id/dlayout"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mydetail_tv"
+            android:background="#FAFAFA"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginHorizontal="16dp"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Join time"
+                    android:textColor="#191919"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/roboto"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10:05 AM"
+                    android:textColor="#191919"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:layout_marginStart="210dp"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginHorizontal="16dp"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Leave time"
+                    android:textColor="#191919"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/roboto"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10:05 AM"
+                    android:textColor="#191919"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:layout_marginStart="200dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Duration"
+                    android:textColor="#191919"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/roboto"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10:05 AM"
+                    android:textColor="#191919"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:layout_marginStart="215dp"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+<TextView
+    android:id="@+id/studetail"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="STUDENT’S DETAILS"
+    android:textColor="#636363"
+    android:fontFamily="@font/roboto_bold"
+    android:layout_below="@+id/dlayout"
+    android:layout_marginTop="32dp"
+
+    android:layout_marginStart="24dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VIEW MORE"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="24dp"
+            android:textColor="#1089FF"
+            android:fontFamily="@font/roboto_bold"
+            android:layout_below="@+id/dlayout"
+            android:layout_marginTop="32dp"
+            android:id="@+id/viewmore"
+           />
+
+        <LinearLayout
+            android:id="@+id/stulayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/studetail"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="8dp"
+            android:background="#FAFAFA"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:text="Total students"
+                    android:textColor="#191919"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="225dp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="24"
+                    android:textColor="#191919"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:text="Present"
+                    android:textColor="#191919"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="265dp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="20"
+                    android:textColor="#191919"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:text="Absent"
+                    android:textColor="#191919"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="280dp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="4"
+                    android:textColor="#191919"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</FrameLayout>

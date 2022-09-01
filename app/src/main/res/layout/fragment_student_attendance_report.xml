@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.StudentAttendanceReportFragment">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PRESENT"
+        android:textSize="14sp"
+        android:fontFamily="@font/roboto_bold"
+        android:textColor="#28DF99"
+        app:drawableStartCompat="@drawable/present_img"
+        android:drawablePadding="18dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginStart="24dp"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/present_rv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="18dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ABSENT"
+        android:textSize="14sp"
+        android:fontFamily="@font/roboto_bold"
+        android:textColor="#FF414D"
+        app:drawableStartCompat="@drawable/absentnew"
+        android:drawablePadding="18dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginStart="24dp"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/absent_rv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="18dp"/>
+</LinearLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <View
+        android:layout_width="48dp"
+        android:layout_height="5dp"
+        android:background="#E6E6E6"
+        android:layout_gravity="center"
+        android:layout_marginTop="18dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:text="OPTIONS"
+        android:textColor="#AEAEAE"
+        android:fontFamily="@font/roboto_bold"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"/>
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textSize="16sp"
+      android:text="Edit"
+      android:textColor="#636363"
+      android:fontFamily="@font/roboto"
+      android:drawableStart="@drawable/ic_edit"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="24dp"
+      android:drawablePadding="16dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="Delete"
+        android:textColor="#636363"
+        android:fontFamily="@font/roboto"
+        android:drawableStart="@drawable/ic_baseline_delete"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:drawablePadding="16dp"/>
+
+
+</LinearLayout>

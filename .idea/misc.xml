@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Govindraj/AndroidStudioProjects/AttandenceTeacherside/app/src/main/res/drawable-v24/border.xml" value="0.1375" />
+        <entry key="..\:/Users/Govindraj/AndroidStudioProjects/AttandenceTeacherside/app/src/main/res/drawable-v24/circle_progress_bar.xml" value="0.1375" />
+        <entry key="..\:/Users/Govindraj/AndroidStudioProjects/AttandenceTeacherside/app/src/main/res/drawable-v24/circle_shape.xml" value="0.1375" />
+        <entry key="..\:/Users/Govindraj/AndroidStudioProjects/AttandenceTeacherside/app/src/main/res/drawable-v24/oval3.xml" value="0.1375" />
+        <entry key="..\:/Users/Govindraj/AndroidStudioProjects/AttandenceTeacherside/app/src/main/res/drawable-v24/roundbutton.xml" value="0.126" />
+        <entry key="..\:/Users/Govindraj/AndroidStudioProjects/AttandenceTeacherside/app/src/main/res/drawable-v24/roundbutton2.xml" value="0.1375" />
+        <entry key="..\:/Users/Govindraj/AndroidStudioProjects/AttandenceTeacherside/app/src/main/res/drawable/approvebtn.xml" value="0.1405" />
+        <entry key="..\:/Users/Govindraj/AndroidStudioProjects/AttandenceTeacherside/app/src/main/res/drawable/border4.xml" value="0.1375" />
+        <entry key="..\:/Users/Govindraj/AndroidStudioProjects/AttandenceTeacherside/app/src/main/res/drawable/border5.xml" value="0.1375" />
+        <entry key="..\:/Users/Govindraj/AndroidStudioProjects/AttandenceTeacherside/app/src/main/res/drawable/border6.xml" value="0.139" />
+        <entry key="..\:/Users/Govindraj/AndroidStudioProjects/AttandenceTeacherside/app/src/main/res/drawable/border7.xml" value="0.1395" />
+        <entry key="..\:/Users/Govindraj/AndroidStudioProjects/AttandenceTeacherside/app/src/main/res/drawable/border8.xml" value="0.1405" />
+        <entry key="..\:/Users/Govindraj/AndroidStudioProjects/AttandenceTeacherside/app/src/main/res/drawable/border9.xml" value="0.1405" />
+        <entry key="..\:/Users/Govindraj/AndroidStudioProjects/AttandenceTeacherside/app/src/main/res/drawable/border_forpresent.xml" value="0.138" />
+        <entry key="..\:/Users/Govindraj/AndroidStudioProjects/AttandenceTeacherside/app/src/main/res/drawable/cancelbtn.xml" value="0.1375" />
+        <entry key="..\:/Users/Govindraj/AndroidStudioProjects/AttandenceTeacherside/app/src/main/res/drawable/clockcard_bg.xml" value="0.126" />
+        <entry key="..\:/Users/Govindraj/AndroidStudioProjects/AttandenceTeacherside/app/src/main/res/drawable/oval10_leave2.xml" value="0.1395" />
+        <entry key="..\:/Users/Govindraj/AndroidStudioProjects/AttandenceTeacherside/app/src/main/res/drawable/oval11_leave2.xml" value="0.1395" />
+        <entry key="..\:/Users/Govindraj/AndroidStudioProjects/AttandenceTeacherside/app/src/main/res/drawable/oval2.xml" value="0.1375" />
+        <entry key="..\:/Users/Govindraj/AndroidStudioProjects/AttandenceTeacherside/app/src/main/res/drawable/oval4.xml" value="0.1375" />
+        <entry key="..\:/Users/Govindraj/AndroidStudioProjects/AttandenceTeacherside/app/src/main/res/drawable/oval5.xml" value="0.1375" />
+        <entry key="..\:/Users/Govindraj/AndroidStudioProjects/AttandenceTeacherside/app/src/main/res/drawable/oval6.xml" value="0.1395" />
+        <entry key="..\:/Users/Govindraj/AndroidStudioProjects/AttandenceTeacherside/app/src/main/res/drawable/oval7_leave2.xml" value="0.1395" />
+        <entry key="..\:/Users/Govindraj/AndroidStudioProjects/AttandenceTeacherside/app/src/main/res/drawable/oval8_leave2.xml" value="0.1395" />
+        <entry key="..\:/Users/Govindraj/AndroidStudioProjects/AttandenceTeacherside/app/src/main/res/drawable/oval9_leave2.xml" value="0.1395" />
+        <entry key="..\:/Users/Govindraj/AndroidStudioProjects/AttandenceTeacherside/app/src/main/res/layout-land/fragment_home.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/Govindraj/AndroidStudioProjects/AttandenceTeacherside/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/Govindraj/AndroidStudioProjects/AttandenceTeacherside/app/src/main/res/layout/calendar_cell.xml" value="0.16259057971014493" />
+        <entry key="..\:/Users/Govindraj/AndroidStudioProjects/AttandenceTeacherside/app/src/main/res/layout/child_recyclerview_item.xml" value="0.5" />
+        <entry key="..\:/Users/Govindraj/AndroidStudioProjects/AttandenceTeacherside/app/src/main/res/layout/confirm_dialouge.xml" value="0.16847826086956522" />
+        <entry key="..\:/Users/Govindraj/AndroidStudioProjects/AttandenceTeacherside/app/src/main/res/layout/details_rv_presentcard.xml" value="0.22" />
+        <entry key="..\:/Users/Govindraj/AndroidStudioProjects/AttandenceTeacherside/app/src/main/res/layout/fragment_approved.xml" value="0.17572463768115942" />
+        <entry key="..\:/Users/Govindraj/AndroidStudioProjects/AttandenceTeacherside/app/src/main/res/layout/fragment_attendance_report.xml" value="0.25" />
+        <entry key="..\:/Users/Govindraj/AndroidStudioProjects/AttandenceTeacherside/app/src/main/res/layout/fragment_attendance_requirements.xml" value="0.25" />
+        <entry key="..\:/Users/Govindraj/AndroidStudioProjects/AttandenceTeacherside/app/src/main/res/layout/fragment_attendance_summary.xml" value="0.25" />
+        <entry key="..\:/Users/Govindraj/AndroidStudioProjects/AttandenceTeacherside/app/src/main/res/layout/fragment_attendance_two.xml" value="0.25" />
+        <entry key="..\:/Users/Govindraj/AndroidStudioProjects/AttandenceTeacherside/app/src/main/res/layout/fragment_create_holiday.xml" value="0.17391304347826086" />
+        <entry key="..\:/Users/Govindraj/AndroidStudioProjects/AttandenceTeacherside/app/src/main/res/layout/fragment_create_leave_type.xml" value="0.19010416666666666" />
+        <entry key="..\:/Users/Govindraj/AndroidStudioProjects/AttandenceTeacherside/app/src/main/res/layout/fragment_details.xml" value="0.21" />
+        <entry key="..\:/Users/Govindraj/AndroidStudioProjects/AttandenceTeacherside/app/src/main/res/layout/fragment_edit_leave.xml" value="0.25" />
+        <entry key="..\:/Users/Govindraj/AndroidStudioProjects/AttandenceTeacherside/app/src/main/res/layout/fragment_editholiday.xml" value="0.25" />
+        <entry key="..\:/Users/Govindraj/AndroidStudioProjects/AttandenceTeacherside/app/src/main/res/layout/fragment_global.xml" value="0.21" />
+        <entry key="..\:/Users/Govindraj/AndroidStudioProjects/AttandenceTeacherside/app/src/main/res/layout/fragment_holidays.xml" value="0.16847826086956522" />
+        <entry key="..\:/Users/Govindraj/AndroidStudioProjects/AttandenceTeacherside/app/src/main/res/layout/fragment_holidays_two.xml" value="0.17391304347826086" />
+        <entry key="..\:/Users/Govindraj/AndroidStudioProjects/AttandenceTeacherside/app/src/main/res/layout/fragment_home.xml" value="0.1" />
+        <entry key="..\:/Users/Govindraj/AndroidStudioProjects/AttandenceTeacherside/app/src/main/res/layout/fragment_leaves.xml" value="0.25" />
+        <entry key="..\:/Users/Govindraj/AndroidStudioProjects/AttandenceTeacherside/app/src/main/res/layout/fragment_leaves2.xml" value="0.33" />
+        <entry key="..\:/Users/Govindraj/AndroidStudioProjects/AttandenceTeacherside/app/src/main/res/layout/fragment_mark_attendance.xml" value="0.25" />
+        <entry key="..\:/Users/Govindraj/AndroidStudioProjects/AttandenceTeacherside/app/src/main/res/layout/fragment_mark_leaves.xml" value="0.1721014492753623" />
+        <entry key="..\:/Users/Govindraj/AndroidStudioProjects/AttandenceTeacherside/app/src/main/res/layout/fragment_my_attendance.xml" value="0.22" />
+        <entry key="..\:/Users/Govindraj/AndroidStudioProjects/AttandenceTeacherside/app/src/main/res/layout/fragment_pendiing.xml" value="0.17572463768115942" />
+        <entry key="..\:/Users/Govindraj/AndroidStudioProjects/AttandenceTeacherside/app/src/main/res/layout/fragment_privileged_viewl.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Govindraj/AndroidStudioProjects/AttandenceTeacherside/app/src/main/res/layout/fragment_privilieged_view__leave.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Govindraj/AndroidStudioProjects/AttandenceTeacherside/app/src/main/res/layout/fragment_rejected.xml" value="0.17572463768115942" />
+        <entry key="..\:/Users/Govindraj/AndroidStudioProjects/AttandenceTeacherside/app/src/main/res/layout/fragment_request.xml" value="0.17572463768115942" />
+        <entry key="..\:/Users/Govindraj/AndroidStudioProjects/AttandenceTeacherside/app/src/main/res/layout/fragment_stu__a_report__rv_click.xml" value="0.25" />
+        <entry key="..\:/Users/Govindraj/AndroidStudioProjects/AttandenceTeacherside/app/src/main/res/layout/fragment_student_attendance_report.xml" value="0.21" />
+        <entry key="..\:/Users/Govindraj/AndroidStudioProjects/AttandenceTeacherside/app/src/main/res/layout/globaldefaul_childrv_card.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/Govindraj/AndroidStudioProjects/AttandenceTeacherside/app/src/main/res/layout/globaldefault_rv_parentcard.xml" value="0.17391304347826086" />
+        <entry key="..\:/Users/Govindraj/AndroidStudioProjects/AttandenceTeacherside/app/src/main/res/layout/holidaytwo_rv_card.xml" value="0.25" />
+        <entry key="..\:/Users/Govindraj/AndroidStudioProjects/AttandenceTeacherside/app/src/main/res/layout/import_holiday_dialouge.xml" value="0.22" />
+        <entry key="..\:/Users/Govindraj/AndroidStudioProjects/AttandenceTeacherside/app/src/main/res/layout/leave_details_dialoug.xml" value="0.33" />
+        <entry key="..\:/Users/Govindraj/AndroidStudioProjects/AttandenceTeacherside/app/src/main/res/layout/leave_recyclerview_card.xml" value="0.25" />
+        <entry key="..\:/Users/Govindraj/AndroidStudioProjects/AttandenceTeacherside/app/src/main/res/layout/leavedetails_approved_dialouge.xml" value="0.17572463768115942" />
+        <entry key="..\:/Users/Govindraj/AndroidStudioProjects/AttandenceTeacherside/app/src/main/res/layout/leaves_bottomsheet.xml" value="0.21" />
+        <entry key="..\:/Users/Govindraj/AndroidStudioProjects/AttandenceTeacherside/app/src/main/res/layout/leaves_two_rvcard.xml" value="0.32226832641770403" />
+        <entry key="..\:/Users/Govindraj/AndroidStudioProjects/AttandenceTeacherside/app/src/main/res/layout/parent_recycler_items.xml" value="0.16847826086956522" />
+        <entry key="..\:/Users/Govindraj/AndroidStudioProjects/AttandenceTeacherside/app/src/main/res/layout/pendingtab_rv_card.xml" value="0.22" />
+        <entry key="..\:/Users/Govindraj/AndroidStudioProjects/AttandenceTeacherside/app/src/main/res/layout/priviliged_view_request_rvcard.xml" value="0.33" />
+        <entry key="..\:/Users/Govindraj/AndroidStudioProjects/AttandenceTeacherside/app/src/main/res/layout/requestinsidetab_onclick_carddialouge.xml" value="0.25" />
+        <entry key="..\:/Users/Govindraj/AndroidStudioProjects/AttandenceTeacherside/app/src/main/res/layout/select_range_atten_two.xml" value="0.17028985507246377" />
+        <entry key="..\:/Users/Govindraj/AndroidStudioProjects/AttandenceTeacherside/app/src/main/res/layout/stu_a_report_rv_card.xml" value="0.25" />
+        <entry key="..\:/Users/Govindraj/AndroidStudioProjects/AttandenceTeacherside/app/src/main/res/layout/studentattendance_report_rvcard.xml" value="0.33" />
+        <entry key="..\:/Users/Govindraj/AndroidStudioProjects/AttandenceTeacherside/app/src/main/res/menu/save_menu.xml" value="0.203125" />
+        <entry key="..\:/Users/Govindraj/AndroidStudioProjects/AttandenceTeacherside/app/src/main/res/xml/root_preferences.xml" value="0.25" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
